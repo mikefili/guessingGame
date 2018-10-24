@@ -51,3 +51,15 @@ if (responseFive === 'Y' || responseFive === 'YES') {
   alert('I guess you don\'t know me very well...');
 }
 console.log('responseFive', responseFive);
+
+alert('For the next question, please respond with a number, rather than Y/N.');
+
+console.log('numberGuess should be undefined:', numberGuess);
+var numberGuess = parseInt(prompt('Can you guess my favorite number?'));
+while (numberGuess !== 17) {
+  if (numberGuess > 17) {
+    numberGuess = parseInt(prompt('Your guess was too high. Try again'));
+  } else {
+    numberGuess = parseInt(prompt('Your guess was too low.  Try again'));
+  }
+}
