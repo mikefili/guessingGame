@@ -88,10 +88,8 @@ while (guesses > 0 && flag === false) {
       break;
     } else if (numbGuess > 17) {
       numbGuess = prompt('Your guess was too high. Try again.');
-  
     } else {
       numbGuess = prompt('Your guess was too low. Try again.');
-  
     }
   }
 }
