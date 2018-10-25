@@ -1,6 +1,7 @@
 "use strict";
 
 var correctAnswers = 0;
+var incorrectAnswers = 0;
 console.log('userName should be undefined:', userName);
 var userName = prompt('Welcome to my site. What is your name?');
 alert('Thank you for visiting my site, ' + userName + '!');
@@ -16,16 +17,19 @@ if (responseOne === 'Y' || responseOne === 'YES') {
   correctAnswers++;
 } else {
   alert('Best of luck then!');
+  incorrectAnswers++;
 }
 console.log('responseOne', responseOne);
 
 console.log(correctAnswers);
+console.log(incorrectAnswers);
 
 //second question
 console.log('responseTwo should be undefined:', responseTwo);
 var responseTwo = prompt('Was I born in WA state?').toUpperCase();
 if (responseTwo === 'Y' || responseTwo === 'YES') {
   alert('Sorry! I was a California baby.');
+  incorrectAnswers++;
 } else {
   alert('You got it! I was a California baby.');
   correctAnswers++;
@@ -33,6 +37,7 @@ if (responseTwo === 'Y' || responseTwo === 'YES') {
 console.log('responseTwo', responseTwo);
 
 console.log(correctAnswers);
+console.log(incorrectAnswers);
 
 //third question
 console.log('responseThree should be undefined:', responseThree);
@@ -42,10 +47,12 @@ if (responseThree === 'Y' || responseThree === 'YES') {
   correctAnswers++;
 } else {
   alert('I guess you don\'t know me very well...');
+  incorrectAnswers++;
 }
 console.log('responseThree', responseThree);
 
 console.log(correctAnswers);
+console.log(incorrectAnswers);
 
 //fourth question
 console.log('responseFour should be undefined:', responseFour);
@@ -55,10 +62,12 @@ if (responseFour === 'Y' || responseFour === 'YES') {
   correctAnswers++;
 } else {
   alert('I guess you don\'t know me very well...');
+  incorrectAnswers++;
 }
 console.log('responseFour', responseFour);
 
 console.log(correctAnswers);
+console.log(incorrectAnswers);
 
 // fifth question
 console.log('responseFive should be undefined:', responseFive);
@@ -68,10 +77,12 @@ if (responseFive === 'Y' || responseFive === 'YES') {
   correctAnswers++;
 } else {
   alert('I guess you don\'t know me very well...');
+  incorrectAnswers++;
 }
 console.log('responseFive', responseFive);
 
 console.log(correctAnswers);
+console.log(incorrectAnswers);
 
 //sixth question
 var numbGuess = parseInt(prompt('For the next question, please respond with a number, rather than Y/N. Can you guess my favorite number?'));
@@ -88,13 +99,16 @@ while (guesses > 0 && flag === false) {
       break;
     } else if (numbGuess > 17) {
       numbGuess = prompt('Your guess was too high. Try again.');
+      incorrectAnswers++;
     } else {
       numbGuess = prompt('Your guess was too low. Try again.');
+      incorrectAnswers++;
     }
   }
 }
 
 console.log(correctAnswers);
+console.log(incorrectAnswers);
 
 //seventh question
 var possibleAnswers = ['CALIFORNIA', 'MONTANA', 'WASHINGTON', 'NORTH CAROLINA'];
@@ -108,7 +122,6 @@ while (guesses2 > 0 && flag2 === false) {
     if (question === possibleAnswers[j]) {
       alert('Great work!  It seems like you do know me pretty well.');
       flag2 = true;
-      correctAnswers++;
       break;
     } else if (question !== correctAnswers[j]) {
       question = parseInt(prompt('Nope! I have lived a lot of places, but never there!'));
@@ -117,6 +130,7 @@ while (guesses2 > 0 && flag2 === false) {
 }
 
 console.log(correctAnswers);
+console.log(incorrectAnswers);
 
 if (correctAnswers >= 4) {
   alert('You got ' + correctAnswers + ' of the questions right, I guess you know me pretty well!');
