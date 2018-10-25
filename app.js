@@ -122,7 +122,6 @@ function q7() {
       alert('Nope! I have lived a lot of places, but never there!');
     }
     console.log(correctAnswers);
-    
   }
 }
 
