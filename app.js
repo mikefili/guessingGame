@@ -124,3 +124,9 @@ while (guesses > 0 && flag === false) {
 
 console.log(correctAnswers);
 console.log(incorrectAnswers);
+
+if (correctAnswers >= 4) {
+  alert('You got ' + correctAnswers + ' of the questions right, I guess you know me pretty well!');
+} else {
+  alert('You only got ' + correctAnswers + ' questions right. I guess you need to spend some more time with me!');
+}
