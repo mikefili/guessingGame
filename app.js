@@ -79,7 +79,7 @@ console.log('responseFive', responseFive);
 console.log(correctAnswers);
 console.log(incorrectAnswers);
 
-var numbGuess = prompt('For the next question, please respond with a number, rather than Y/N. Can you guess my favorite number?');
+var numbGuess = parseInt(prompt('For the next question, please respond with a number, rather than Y/N. Can you guess my favorite number?'));
 var guesses = 3;
 var flag = false;
 while (guesses > 0 && flag === false) {
@@ -92,10 +92,10 @@ while (guesses > 0 && flag === false) {
       correctAnswers++;
       break;
     } else if (numbGuess > 17) {
-      numbGuess = parseInt(prompt('Your guess was too high. Try again.'));
+      numbGuess = prompt('Your guess was too high. Try again.');
       incorrectAnswers++;
     } else {
-      numbGuess = parseInt(prompt('Your guess was too low. Try again.'));
+      numbGuess = prompt('Your guess was too low. Try again.');
       incorrectAnswers++;
     }
   }
