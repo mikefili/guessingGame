@@ -40,3 +40,8 @@ ol {
   color: #F6EB61;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
+
+#profilePic {
+  float: left;
+  margin-right:50px; 
+}

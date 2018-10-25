@@ -103,14 +103,16 @@ var guesses2 = 5;
 var flag2 = false;
 while (guesses2 > 0 && flag2 === false) {
   guesses2--;
-  for (var j = 0; j < possibleAnswers.length; j++); {
+  for (var j = 0; j <= possibleAnswers.length; j++); {
     console.log('guesses2', guesses2);
     if (question === possibleAnswers[j]) {
+      correctAnswers;
       alert('Great work!  It seems like you do know me pretty well.');
       flag2 = true;
+      correctAnswers++;
       break;
     } else if (question !== correctAnswers[j]) {
-      question = parseInt(prompt('Nope! I have lived a lot of places, but never there!'));
+      question = prompt('Nope! I have lived a lot of places, but never there!');
     }
   }
 }
