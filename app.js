@@ -19,7 +19,7 @@ function q1() {
     alert('Best of luck then!');
   }
   console.log('responseOne', responseOne);
-  console.log(correctAnswers);
+  console.log('Tally of correct answers', correctAnswers);
 }
 
 //second question
@@ -33,7 +33,7 @@ function q2() {
     return correctAnswers++;
   }
   console.log('responseTwo', responseTwo);
-  console.log(correctAnswers);
+  console.log('Tally of correct answers', correctAnswers);
 }
 
 //third question
@@ -47,7 +47,7 @@ function q3() {
     alert('I guess you don\'t know me very well...');
   }
   console.log('responseThree', responseThree);
-  console.log(correctAnswers);
+  console.log('Tally of correct answers', correctAnswers);
 }
 
 //fourth question
@@ -61,7 +61,7 @@ function q4() {
     alert('I guess you don\'t know me very well...');
   }
   console.log('responseFour', responseFour);
-  console.log(correctAnswers);
+  console.log('Tally of correct answers', correctAnswers);
 }
 
 // fifth question
@@ -75,7 +75,7 @@ function q5() {
     alert('I guess you don\'t know me very well...');
   }
   console.log('responseFive', responseFive);
-  console.log(correctAnswers);
+  console.log('Tally of correct answers', correctAnswers);
 }
 
 //sixth question
@@ -98,7 +98,7 @@ function q6() {
       }
     }
   }
-  console.log(correctAnswers);
+  console.log('Tally of correct answers', correctAnswers);
 }
 
 //seventh question
@@ -121,7 +121,7 @@ function q7() {
     } else {
       alert('Nope! I have lived a lot of places, but never there!');
     }
-    console.log(correctAnswers);
+    console.log('Tally of correct answers', correctAnswers);
   }
 }
 
