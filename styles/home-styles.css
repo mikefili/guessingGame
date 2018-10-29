@@ -30,3 +30,9 @@ footer {
   position: fixed;
   bottom: 100px;
 }
+
+.subtitles {
+  font-family: "Krub", sans-serif;
+  font-variant: small-caps;
+  font-size: 20px;
+}
