@@ -1,0 +1,79 @@
+header {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+a {
+  color: rgba(255, 0, 0, 0.747);
+}
+
+header nav {
+  font-family: "Krub", sans-serif;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Krub", sans-serif;
+  background-image: url("bulbBkg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Krub", sans-serif;
+  position: relative;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Krub", sans-serif;
+  text-align: justify;
+  position: relative;
+}
+
+ul {
+  font-family: "Krub", sans-serif;
+  position: relative;
+}
+
+ol {
+  font-family: "Krub", sans-serif;
+  position: relative;
+}
+
+.bio {
+  float: left;
+}
+
+.top10 {
+  display: block;
+  float: none;
+}
+
+ol li:first-child {
+  margin-left: -10px;
+  position: relative;
+  font-size: 50px;
+  font-style: oblique;
+}
+
+footer {
+  height: 50px;
+  background-color: #cccccc;
+  position: fixed;
+  bottom: 100px;
+}
+
+b {
+  font-family: "Krub", sans-serif;
+}
+/* 
+div {
+  font-family: 'Gloria Hallelujah', cursive;
+
+} */

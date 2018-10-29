@@ -106,7 +106,7 @@ function q7() {
   var possibleAnswers = ['CALIFORNIA', 'MONTANA', 'WASHINGTON', 'NORTH CAROLINA'];
   var guesses2 = 6;
   var flag2 = false;
-  while (guesses2 > 0 && flag2 === false) {
+  while (guesses2 > 0 && flag2 === false) {  // try out !flag2 instead
     var question = prompt('For this final question, can you guess any of the 4 states I\'ve lived in?').toUpperCase();
     guesses2--;
     for (var j = 0; j <= possibleAnswers.length; j++) {
