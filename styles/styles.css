@@ -1,5 +1,5 @@
 header {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: "Gloria Hallelujah", cursive;
   text-align: center;
   font-size: 50px;
   margin-top: 20px;
@@ -32,39 +32,58 @@ h1 {
 
 p {
   font-family: "Krub", sans-serif;
-  text-align: justify;
-  position: relative;
+  text-align: center;
+  width: 50pc;
 }
 
 ul {
   font-family: "Krub", sans-serif;
-  position: relative;
 }
 
 ol {
   font-family: "Krub", sans-serif;
-  position: relative;
 }
 
 .bio {
-  float: left;
-}
-
-.top10 {
-  display: block;
-  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 ol li:first-child {
-  margin-left: -10px;
+  margin-left: -50px;
   position: relative;
   font-size: 50px;
+  color: rgba(255, 0, 0, 0.747);
   font-style: oblique;
+  width: 500px;
+}
+
+#top10 {
+  padding-left: 50px;
+  display: flex;
+  float: none;
+  width: 250px; /* you could actually just change it to 0px */
+  margin: 10px auto;
+}
+
+.titles {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.lists {
+  margin-left: auto;
+  margin-right: auto;
+  width: 440px;
 }
 
 footer {
   height: 50px;
-  background-color: #cccccc;
+  background-color: transparent;
   position: fixed;
   bottom: 100px;
 }
@@ -72,8 +91,3 @@ footer {
 b {
   font-family: "Krub", sans-serif;
 }
-/* 
-div {
-  font-family: 'Gloria Hallelujah', cursive;
-
-} */
